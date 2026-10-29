@@ -1,0 +1,441 @@
+/* Lean Apps hub. The Lean family brand system: warm paper, dark ink, one
+   action blue, IBM Plex, and a 4 px spacing grid. No build step. */
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("assets/fonts/ibm-plex-sans-latin-400-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("assets/fonts/ibm-plex-sans-latin-600-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM Plex Serif";
+  src: url("assets/fonts/ibm-plex-serif-latin-600-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("assets/fonts/ibm-plex-mono-latin-400-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light dark;
+  --font-sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-serif: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+  --font-mono: "IBM Plex Mono", Consolas, monospace;
+
+  --canvas: #faf9f7;
+  --surface: #ffffff;
+  --surface-muted: #f4f2ee;
+  --border: #e8e4dc;
+  --text-primary: #1a1917;
+  --text-secondary: #5a554c;
+  --accent: #1d4ed8;
+  --link: #1d4ed8;
+  --link-hover: #1e40af;
+  --ring: #3b82f6;
+  --code-canvas: #1a1917;
+  --code-text: #f4f2ee;
+  --inline-code: #f4f2ee;
+
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --radius-sm: 4px;
+  --radius-lg: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --canvas: #0e0d0b;
+    --surface: #1a1917;
+    --surface-muted: #2b2924;
+    --border: #403d37;
+    --text-primary: #faf9f7;
+    --text-secondary: #d5cfc3;
+    --accent: #93c5fd;
+    --link: #93c5fd;
+    --link-hover: #bfdbfe;
+    --code-canvas: #090807;
+    --inline-code: #2b2924;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--canvas);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--link);
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 3px;
+}
+
+code {
+  padding: 0.1em 0.3em;
+  border-radius: var(--radius-sm);
+  background: var(--inline-code);
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  overflow-wrap: anywhere;
+}
+
+pre {
+  margin: var(--space-4) 0 0;
+  padding: var(--space-3) var(--space-4);
+  overflow-x: auto;
+  border-radius: var(--radius-lg);
+  background: var(--code-canvas);
+  color: var(--code-text);
+  font-size: 0.875rem;
+}
+
+pre code {
+  padding: 0;
+  background: none;
+  font-size: inherit;
+  overflow-wrap: normal;
+}
+
+.skip-link {
+  position: absolute;
+  top: -10rem;
+  left: var(--space-4);
+  padding: var(--space-2) var(--space-4);
+  background: var(--surface);
+}
+
+.skip-link:focus {
+  top: var(--space-4);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.container {
+  width: min(100% - 2rem, 72rem);
+  margin: 0 auto;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+}
+
+.header-row,
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-4) 0;
+}
+
+.brand {
+  color: var(--text-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.site-header nav,
+.site-footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+}
+
+.site-header nav a,
+.site-footer nav a {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.site-header nav a:hover,
+.site-footer nav a:hover {
+  color: var(--text-primary);
+  text-decoration: underline;
+}
+
+.hero {
+  padding: var(--space-20) 0 var(--space-12);
+}
+
+.eyebrow {
+  margin: 0 0 var(--space-4);
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.08;
+}
+
+h1 {
+  max-width: 18ch;
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+}
+
+h2 {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+}
+
+.hero-lead {
+  max-width: 40rem;
+  margin: var(--space-6) 0 0;
+  color: var(--text-secondary);
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.section {
+  padding: var(--space-16) 0;
+}
+
+.section-muted {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--surface-muted);
+}
+
+.app-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-6);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.app-card {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-6);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+
+.app-name {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.app-name img {
+  flex: none;
+}
+
+.app-card h3 {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.app-card h3 a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.app-card h3 a:hover {
+  text-decoration: underline;
+}
+
+.app-card p {
+  margin: var(--space-4) 0 0;
+  color: var(--text-secondary);
+}
+
+.app-card .app-fact {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.app-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-top: auto !important;
+  padding-top: var(--space-4);
+  font-size: 0.875rem;
+}
+
+.table-wrap {
+  margin-top: var(--space-8);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+th,
+td {
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+
+thead th {
+  color: var(--text-secondary);
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.install-note {
+  max-width: 44rem;
+  margin: var(--space-6) 0 0;
+  color: var(--text-secondary);
+}
+
+.common-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4) var(--space-12);
+  margin: var(--space-8) 0 0;
+  padding: 0;
+  list-style: none;
+  color: var(--text-secondary);
+}
+
+.common-list strong {
+  color: var(--text-primary);
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+@media (max-width: 52rem) {
+  .app-list,
+  .common-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero {
+    padding: var(--space-12) 0 var(--space-8);
+  }
+
+  .section {
+    padding: var(--space-12) 0;
+  }
+
+  table,
+  thead,
+  tbody,
+  tr,
+  th,
+  td {
+    display: block;
+  }
+
+  thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+
+  tbody tr {
+    padding: var(--space-3) 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  th,
+  td {
+    padding: var(--space-2) 0;
+    border-bottom: 0;
+  }
+
+  td::before {
+    display: block;
+    color: var(--text-secondary);
+    font-size: 0.8125rem;
+    font-weight: 600;
+  }
+
+  td:nth-child(2)::before {
+    content: "LeanDoc";
+  }
+
+  td:nth-child(3)::before {
+    content: "LeanRows";
+  }
+
+  td:nth-child(4)::before {
+    content: "LeanMark";
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}

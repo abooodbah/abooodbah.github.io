@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e0d0b" media="(prefers-color-scheme: dark)">
+  <title>Lean Apps: free offline viewers for Word, CSV and Markdown</title>
+  <meta name="description" content="Three small, MIT-licensed desktop viewers: LeanDoc for Word documents, LeanRows for huge CSV files, LeanMark for Markdown. Read-only, offline, no telemetry.">
+  <link rel="canonical" href="https://abooodbah.github.io/">
+  <link rel="icon" href="assets/leandoc-icon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/ibm-plex-serif-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lean Apps: free offline viewers for Word, CSV and Markdown">
+  <meta property="og:description" content="Three small, MIT-licensed desktop viewers: LeanDoc for Word documents, LeanRows for huge CSV files, LeanMark for Markdown. Read-only, offline, no telemetry.">
+  <meta property="og:url" content="https://abooodbah.github.io/">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="#top">Lean Apps</a>
+      <nav aria-label="Primary navigation">
+        <a href="#apps">Apps</a>
+        <a href="#install">Install</a>
+        <a href="https://github.com/abooodbah">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top">
+      <div class="container">
+        <p class="eyebrow">Lean Apps</p>
+        <h1>Small, offline viewers for local files</h1>
+        <p class="hero-lead">
+          Three read-only desktop apps that open a Word document, a huge CSV
+          file, or a Markdown file without the heavy application that usually
+          comes with it. Each is MIT licensed and free.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="apps" aria-labelledby="apps-heading">
+      <div class="container">
+        <h2 id="apps-heading" class="visually-hidden">The apps</h2>
+        <ul class="app-list">
+          <li class="app-card">
+            <div class="app-name">
+              <img src="assets/leandoc-icon.svg" width="40" height="40" alt="">
+              <h3><a href="https://abooodbah.github.io/leandoc/">LeanDoc: Word (.docx) viewer for Windows, Linux and macOS</a></h3>
+            </div>
+            <p>Reads <code>.docx</code> files as pages without Microsoft Office. Macros never run and nothing the document points to is fetched.</p>
+            <p class="app-fact">A 600 KiB Linux package; no office suite needed</p>
+            <pre><code>winget install abooodbah.LeanDoc</code></pre>
+            <p class="app-links">
+              <a href="https://abooodbah.github.io/leandoc/">Website</a>
+              <a href="https://apps.microsoft.com/detail/9NSM04BJL6F6">Microsoft Store</a>
+              <a href="https://github.com/abooodbah/leandoc">Source</a>
+            </p>
+          </li>
+          <li class="app-card">
+            <div class="app-name">
+              <img src="assets/leanrows-icon.svg" width="40" height="40" alt="">
+              <h3><a href="https://abooodbah.github.io/leanrows/">LeanRows: large CSV viewer for Windows</a></h3>
+            </div>
+            <p>Opens CSV, TSV, JSON Lines, and log files too big for Excel, keeping only the visible rows in memory.</p>
+            <p class="app-fact">20 million rows, 1.5 GB, 18.4 MB peak working set</p>
+            <pre><code>winget install --id 9NMV8GKJXSN0 --source msstore</code></pre>
+            <p class="app-links">
+              <a href="https://abooodbah.github.io/leanrows/">Website</a>
+              <a href="https://apps.microsoft.com/detail/9NMV8GKJXSN0">Microsoft Store</a>
+              <a href="https://github.com/abooodbah/leanrows">Source</a>
+            </p>
+          </li>
+          <li class="app-card">
+            <div class="app-name">
+              <img src="assets/leanmark-icon.png" width="40" height="40" alt="">
+              <h3><a href="https://abooodbah.github.io/leanmark/">LeanMark: Markdown viewer with Mermaid for Windows, Linux and macOS</a></h3>
+            </div>
+            <p>Reads <code>.md</code> files, GitHub-flavored Markdown, and Mermaid diagrams offline, without opening an editor.</p>
+            <p class="app-fact">About 74 ms to a visible window on Windows 11</p>
+            <pre><code>winget install abooodbah.LeanMark</code></pre>
+            <p class="app-links">
+              <a href="https://abooodbah.github.io/leanmark/">Website</a>
+              <a href="https://apps.microsoft.com/detail/9MSS4WKJ22ZV">Microsoft Store</a>
+              <a href="https://github.com/abooodbah/leanmark">Source</a>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="install" aria-labelledby="install-heading">
+      <div class="container">
+        <p class="eyebrow">Install</p>
+        <h2 id="install-heading">Ways to install</h2>
+        <div class="table-wrap">
+          <table>
+            <caption class="visually-hidden">Install routes for each app</caption>
+            <thead>
+              <tr>
+                <th scope="col">Route</th>
+                <th scope="col">LeanDoc</th>
+                <th scope="col">LeanRows</th>
+                <th scope="col">LeanMark</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Microsoft Store (signed by Microsoft)</th>
+                <td><a href="https://apps.microsoft.com/detail/9NSM04BJL6F6">9NSM04BJL6F6</a></td>
+                <td><a href="https://apps.microsoft.com/detail/9NMV8GKJXSN0">9NMV8GKJXSN0</a></td>
+                <td><a href="https://apps.microsoft.com/detail/9MSS4WKJ22ZV">9MSS4WKJ22ZV</a></td>
+              </tr>
+              <tr>
+                <th scope="row">winget</th>
+                <td><code>abooodbah.LeanDoc</code></td>
+                <td>Store build only, with <code>--source msstore</code></td>
+                <td><code>abooodbah.LeanMark</code></td>
+              </tr>
+              <tr>
+                <th scope="row">Scoop</th>
+                <td><code>lean/leandoc</code></td>
+                <td><code>lean/leanrows</code></td>
+                <td><code>lean/leanmark</code></td>
+              </tr>
+              <tr>
+                <th scope="row">Homebrew (macOS)</th>
+                <td><code>abooodbah/tap/leandoc</code></td>
+                <td>Windows only</td>
+                <td><code>abooodbah/tap/leanmark</code></td>
+              </tr>
+              <tr>
+                <th scope="row">GitHub Releases</th>
+                <td><a href="https://github.com/abooodbah/leandoc/releases/latest">Windows, Linux, macOS</a></td>
+                <td><a href="https://github.com/abooodbah/leanrows/releases/latest">Windows</a></td>
+                <td><a href="https://github.com/abooodbah/leanmark/releases/latest">Windows, Linux, macOS</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="install-note">Scoop needs the bucket once:</p>
+        <pre><code>scoop bucket add lean https://github.com/abooodbah/scoop-bucket
+scoop install lean/leanrows</code></pre>
+        <p class="install-note">Homebrew:</p>
+        <pre><code>brew install --cask abooodbah/tap/leandoc</code></pre>
+        <p class="install-note">
+          The GitHub Windows builds are unsigned, so Windows may show a
+          SmartScreen warning; the Store builds are signed by Microsoft. The
+          macOS builds are previews that are not notarized.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="common" aria-labelledby="common-heading">
+      <div class="container">
+        <p class="eyebrow">What the three have in common</p>
+        <h2 id="common-heading">Read the file, change nothing</h2>
+        <ul class="common-list">
+          <li><strong>Read-only.</strong> None of them edits or saves the file it opens.</li>
+          <li><strong>Offline.</strong> Their own code makes no network requests. LeanDoc and LeanMark draw pages with the system web runtime, which may contact its vendor on its own; LeanRows is a plain Win32 app.</li>
+          <li><strong>No telemetry.</strong> No account and no tracking.</li>
+          <li><strong>MIT licensed.</strong> The source of each app is on GitHub.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>Made by Abdulfatah Bahbouh. This page sets no cookies and loads no scripts.</p>
+      <nav aria-label="Footer navigation">
+        <a href="https://github.com/abooodbah">GitHub</a>
+        <a href="https://github.com/abooodbah/abooodbah.github.io">Page source</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
