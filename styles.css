@@ -439,3 +439,29 @@ thead th {
     transition: none !important;
   }
 }
+
+/* Android closed-test sign-up */
+.android-join {
+  margin: var(--space-6) 0 var(--space-4);
+}
+.button {
+  display: inline-block;
+  padding: var(--space-3) var(--space-6);
+  border-radius: 6px;
+  background: var(--accent);
+  color: var(--canvas);
+  font-weight: 600;
+  text-decoration: none;
+}
+.button:hover {
+  background: var(--link-hover);
+  color: var(--canvas);
+}
+.button:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+.android-pages {
+  margin: var(--space-4) 0 0;
+  padding-left: 1.25rem;
+}
