@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e0d0b" media="(prefers-color-scheme: dark)">
+  <title>Privacy policy for the Lean Apps on Android</title>
+  <meta name="description" content="Privacy policy for LeanDoc, LeanMark and LeanRows on Android: no data is collected, no network access, no ads, no accounts.">
+  <link rel="canonical" href="https://abooodbah.github.io/privacy/android/">
+  <link rel="icon" href="../../assets/leandoc-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="../../">Lean Apps</a>
+      <nav aria-label="Primary navigation">
+        <a href="../../#apps">Apps</a>
+        <a href="https://github.com/abooodbah">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section">
+      <div class="container">
+        <h1>Privacy policy: Lean Apps on Android</h1>
+        <p>This policy covers the Android apps LeanDoc (<code>io.github.abooodbah.leandoc</code>), LeanMark (<code>io.github.abooodbah.leanmark</code>) and LeanRows (<code>io.github.abooodbah.leanrows</code>), published by Abdulfatah Bahbouh (Lean Apps Studio). Last updated 30 October 2026.</p>
+
+        <h2>The short version</h2>
+        <p>The apps collect no personal data and share nothing. They have no accounts, no ads, no analytics and no crash reporting. They cannot go online: none of them asks Android for the internet permission.</p>
+
+        <h2>Files you open</h2>
+        <p>An app reads the file you choose or share with it, only to show it on your screen. The file is not uploaded, copied to another app or sent anywhere. The apps open files read-only and never change them.</p>
+        <ul>
+          <li><strong>LeanDoc</strong> shows Word documents. It never runs macros and never fetches images, templates or links that a document points to on the internet. It reads a cleaned copy of the document in memory.</li>
+          <li><strong>LeanMark</strong> shows Markdown files. It loads nothing from outside its own files.</li>
+          <li><strong>LeanRows</strong> shows CSV, TSV, JSON Lines, log and Excel <code>.xlsx</code> files. When the app sharing a file only offers a stream, or when you open a workbook, LeanRows writes a working copy into its own private cache folder so it can jump to any row. The copy is removed from the folder as soon as it is open, and its space is freed when you close the file.</li>
+        </ul>
+
+        <h2>What is stored on your device</h2>
+        <p>LeanDoc saves your chosen theme and view (page or reading). LeanMark saves your chosen theme and zoom level. LeanRows saves no settings. These stay on your device, are excluded from Android backup, and are removed when you uninstall the app. While Android keeps an app's screen state, that state holds the address of the open file so it can be shown again after Android restarts the app.</p>
+
+        <h2>Google's components</h2>
+        <p>LeanDoc and LeanMark draw pages with Android System WebView, a component of your device. The apps turn off WebView's usage statistics upload and its Safe Browsing lookups. LeanRows does not use WebView. If you install an app from Google Play, Google Play itself may collect information under Google's own privacy policy; the apps do not add any Google libraries.</p>
+
+        <h2>Children</h2>
+        <p>The apps are general-purpose file viewers and collect no data from anyone, including children.</p>
+
+        <h2>Changes and contact</h2>
+        <p>If this policy changes, the new version will be posted on this page with a new date. Questions: open an issue in the app's repository on GitHub (<a href="https://github.com/abooodbah/leandoc-android/issues">LeanDoc</a>, <a href="https://github.com/abooodbah/leanmark-android/issues">LeanMark</a>, <a href="https://github.com/abooodbah/leanrows-android/issues">LeanRows</a>), or use the contact email on the app's Google Play page.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>Made by Abdulfatah Bahbouh. This page sets no cookies and loads no scripts.</p>
+      <nav aria-label="Footer navigation">
+        <a href="https://github.com/abooodbah">GitHub</a>
+        <a href="https://github.com/abooodbah/abooodbah.github.io">Page source</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
