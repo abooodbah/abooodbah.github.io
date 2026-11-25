@@ -5,3 +5,4 @@ Sitemap: https://abooodbah.github.io/sitemap.xml
 Sitemap: https://abooodbah.github.io/leandoc/sitemap.xml
 Sitemap: https://abooodbah.github.io/leanrows/sitemap.xml
 Sitemap: https://abooodbah.github.io/leanmark/sitemap.xml
+Sitemap: https://abooodbah.github.io/leanslides/sitemap.xml

@@ -6,16 +6,16 @@
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0e0d0b" media="(prefers-color-scheme: dark)">
-  <title>Lean Apps: free offline viewers for Word, CSV and Markdown</title>
-  <meta name="description" content="Three small, MIT-licensed desktop viewers: LeanDoc for Word documents, LeanRows for huge CSV files, LeanMark for Markdown. Read-only, offline, no telemetry.">
+  <title>Lean Apps: free offline viewers for Word, PowerPoint, CSV and Markdown</title>
+  <meta name="description" content="Four small, MIT-licensed desktop viewers: LeanDoc for Word documents, LeanSlides for PowerPoint presentations, LeanRows for huge CSV files, LeanMark for Markdown. Read-only, offline, no telemetry.">
   <link rel="canonical" href="https://abooodbah.github.io/">
   <link rel="icon" href="assets/leandoc-icon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/ibm-plex-serif-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Lean Apps: free offline viewers for Word, CSV and Markdown">
-  <meta property="og:description" content="Three small, MIT-licensed desktop viewers: LeanDoc for Word documents, LeanRows for huge CSV files, LeanMark for Markdown. Read-only, offline, no telemetry.">
+  <meta property="og:title" content="Lean Apps: free offline viewers for Word, PowerPoint, CSV and Markdown">
+  <meta property="og:description" content="Four small, MIT-licensed desktop viewers: LeanDoc for Word documents, LeanSlides for PowerPoint presentations, LeanRows for huge CSV files, LeanMark for Markdown. Read-only, offline, no telemetry.">
   <meta property="og:url" content="https://abooodbah.github.io/">
   <meta name="twitter:card" content="summary">
   <script type="application/ld+json">
@@ -25,7 +25,7 @@
     "name": "Lean Apps",
     "alternateName": "Lean Apps Studio",
     "url": "https://abooodbah.github.io/",
-    "description": "Three small, MIT-licensed desktop viewers: LeanDoc for Word documents, LeanRows for huge CSV files, LeanMark for Markdown.",
+    "description": "Four small, MIT-licensed desktop viewers: LeanDoc for Word documents, LeanSlides for PowerPoint presentations, LeanRows for huge CSV files, LeanMark for Markdown.",
     "author": {"@type": "Person", "name": "Abdulfatah Bahbouh", "url": "https://github.com/abooodbah"}
   }
   </script>
@@ -50,9 +50,9 @@
         <p class="eyebrow">Lean Apps</p>
         <h1>Small, offline viewers for local files</h1>
         <p class="hero-lead">
-          Three read-only desktop apps that open a Word document, a huge CSV
-          file, or a Markdown file without the heavy application that usually
-          comes with it. Each is MIT licensed and free.
+          Four read-only desktop apps that open a Word document, a slide deck,
+          a huge CSV file, or a Markdown file without the heavy application
+          that usually comes with it. Each is MIT licensed and free.
         </p>
       </div>
     </section>
@@ -103,6 +103,19 @@
               <a href="https://github.com/abooodbah/leanmark">Source</a>
             </p>
           </li>
+          <li class="app-card">
+            <div class="app-name">
+              <img src="assets/leanslides-icon.svg" width="40" height="40" alt="">
+              <h3><a href="https://abooodbah.github.io/leanslides/">LeanSlides: PowerPoint (.pptx) viewer for Windows</a></h3>
+            </div>
+            <p>Shows <code>.pptx</code> slides and presents them full screen. Macros never run and nothing the file points to is fetched.</p>
+            <p class="app-fact">About 115 ms to a visible window; a 0.9 MB download</p>
+            <pre><code>scoop install lean/leanslides</code></pre>
+            <p class="app-links">
+              <a href="https://abooodbah.github.io/leanslides/">Website</a>
+              <a href="https://github.com/abooodbah/leanslides">Source</a>
+            </p>
+          </li>
         </ul>
       </div>
     </section>
@@ -120,6 +133,7 @@
                 <th scope="col">LeanDoc</th>
                 <th scope="col">LeanRows</th>
                 <th scope="col">LeanMark</th>
+                <th scope="col">LeanSlides</th>
               </tr>
             </thead>
             <tbody>
@@ -128,36 +142,42 @@
                 <td><a href="https://apps.microsoft.com/detail/9NSM04BJL6F6">9NSM04BJL6F6</a></td>
                 <td><a href="https://apps.microsoft.com/detail/9NMV8GKJXSN0">9NMV8GKJXSN0</a></td>
                 <td><a href="https://apps.microsoft.com/detail/9MSS4WKJ22ZV">9MSS4WKJ22ZV</a></td>
+                <td>In certification</td>
               </tr>
               <tr>
                 <th scope="row">winget</th>
                 <td><code>abooodbah.LeanDoc</code></td>
                 <td><code>abooodbah.LeanRows</code></td>
                 <td><code>abooodbah.LeanMark</code></td>
+                <td>In review</td>
               </tr>
               <tr>
                 <th scope="row">Chocolatey</th>
                 <td><code>choco install leandoc</code></td>
                 <td><code>choco install leanrows</code></td>
                 <td><code>choco install leanmark</code></td>
+                <td>In moderation</td>
               </tr>
               <tr>
                 <th scope="row">Scoop</th>
                 <td><code>lean/leandoc</code></td>
                 <td><code>lean/leanrows</code></td>
                 <td><code>lean/leanmark</code></td>
+                <td><code>lean/leanslides</code></td>
               </tr>
               <tr>
                 <th scope="row">Homebrew (macOS)</th>
                 <td><code>abooodbah/tap/leandoc</code></td>
                 <td>Windows only</td>
                 <td><code>abooodbah/tap/leanmark</code></td>
+                <td>Windows only</td>
               </tr>
               <tr>
                 <th scope="row">GitHub Releases</th>
                 <td><a href="https://github.com/abooodbah/leandoc/releases/latest">Windows, Linux, macOS</a></td>
                 <td><a href="https://github.com/abooodbah/leanrows/releases/latest">Windows</a></td>
                 <td><a href="https://github.com/abooodbah/leanmark/releases/latest">Windows, Linux, macOS</a></td>
+                <td><a href="https://github.com/abooodbah/leanslides/releases/latest">Windows</a></td>
               </tr>
             </tbody>
           </table>
@@ -209,11 +229,11 @@ scoop install lean/leanrows</code></pre>
 
     <section class="section" id="common" aria-labelledby="common-heading">
       <div class="container">
-        <p class="eyebrow">What the three have in common</p>
+        <p class="eyebrow">What the four have in common</p>
         <h2 id="common-heading">Read the file, change nothing</h2>
         <ul class="common-list">
           <li><strong>Read-only.</strong> None of them edits or saves the file it opens.</li>
-          <li><strong>Offline.</strong> Their own code makes no network requests. LeanDoc and LeanMark draw pages with the system web runtime, which may contact its vendor on its own; LeanRows is a plain Win32 app.</li>
+          <li><strong>Offline.</strong> Their own code makes no network requests. LeanDoc, LeanMark and LeanSlides draw pages with the system web runtime, which may contact its vendor on its own; LeanRows is a plain Win32 app.</li>
           <li><strong>No telemetry.</strong> No account and no tracking.</li>
           <li><strong>MIT licensed.</strong> The source of each app is on GitHub.</li>
         </ul>
